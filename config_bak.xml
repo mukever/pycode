@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<website>
+     <!--  需要抓取的网站名称  可以配置多个  -->
+    <web_name name="光明网">
+        <!--  一个网站可以抓取多个列表 如 新闻/财经/社会等页面上的分类  -->
+        <web_li name="列表1">
+            <!--    自己构造下一页链接   -->
+            <attr  name="start_pattrern">网址前缀</attr>
+            <attr  name="end_pattrern">网址后缀</attr>
+             <!--    需要抓取页面的页数   -->
+            <attr  name="page_num">需要抓取的页数</attr>
+            <!--    需要特殊处理的时候，  例如：有点页面在第一个是  index.html 到了第二页就是index_2.html    0代表不需要特殊处理，非0代表需要特殊处理特殊处理的符号为属性值-->
+            <attr name="special" id="0">特殊符号的属性值</attr>
+            <attr name="li_attr">
+                <!--  可能需要抓取的链接形式不止一种-->
+                <attr name="需要抓取的tag的标记id/class/***">属性值1</attr>
+                <attr name="需要抓取的tag的标记id/class/***">属性值2</attr>
+            </attr>
+            <attr name="filename" save="需要保存的文件名">
+                <attr name="art_title">
+                    <attr name="需要抓取文章标题的属性标记">属性值</attr>
+                </attr>
+               <attr name="art_time">
+                    <attr name="需要抓取文章发布时间的属性标记">属性值</attr>
+                </attr>
+                <attr name="art_context">
+                     <attr name="需要抓取文章内容的属性标记">属性值</attr>
+                </attr>
+            </attr>
+        </web_li>
+
+        <web_li name="列表2">
+            <!--    自己构造下一页链接   -->
+            <attr  name="start_pattrern">网址前缀</attr>
+            <attr  name="end_pattrern">网址后缀</attr>
+             <!--    需要抓取页面的页数   -->
+            <attr  name="page_num">需要抓取的页数</attr>
+            <!--    需要特殊处理的时候，  例如：有点页面在第一个是  index.html 到了第二页就是index_2.html    0代表不需要特殊处理，非0代表需要特殊处理特殊处理的符号为属性值-->
+            <attr name="special" id="0">特殊符号的属性值</attr>
+            <attr name="li_attr">
+                <!--  可能需要抓取的链接形式不止一种-->
+                <attr name="需要抓取的tag的标记id/class/***">属性值1</attr>
+                <attr name="需要抓取的tag的标记id/class/***">属性值2</attr>
+            </attr>
+            <attr name="filename" save="需要保存的文件名">
+                <attr name="art_title">
+                    <attr name="需要抓取文章标题的属性标记">属性值</attr>
+                </attr>
+               <attr name="art_time">
+                    <attr name="需要抓取文章发布时间的属性标记">属性值</attr>
+                </attr>
+                <attr name="art_context">
+                     <attr name="需要抓取文章内容的属性标记">属性值</attr>
+                </attr>
+            </attr>
+        </web_li>
+
+         <web_li name="列表3">
+            <!--    自己构造下一页链接   -->
+            <attr  name="start_pattrern">网址前缀</attr>
+            <attr  name="end_pattrern">网址后缀</attr>
+             <!--    需要抓取页面的页数   -->
+            <attr  name="page_num">需要抓取的页数</attr>
+            <!--    需要特殊处理的时候，  例如：有点页面在第一个是  index.html 到了第二页就是index_2.html    0代表不需要特殊处理，非0代表需要特殊处理特殊处理的符号为属性值-->
+            <attr name="special" id="0">特殊符号的属性值</attr>
+            <attr name="li_attr">
+                <!--  可能需要抓取的链接形式不止一种-->
+                <attr name="需要抓取的tag的标记id/class/***">属性值1</attr>
+                <attr name="需要抓取的tag的标记id/class/***">属性值2</attr>
+            </attr>
+            <attr name="filename" save="需要保存的文件名">
+                <attr name="art_title">
+                    <attr name="需要抓取文章标题的属性标记">属性值</attr>
+                </attr>
+               <attr name="art_time">
+                    <attr name="需要抓取文章发布时间的属性标记">属性值</attr>
+                </attr>
+                <attr name="art_context">
+                     <attr name="需要抓取文章内容的属性标记">属性值</attr>
+                </attr>
+            </attr>
+        </web_li>
+    </web_name>
+
+    <web_name name="新浪网">
+        <!--  一个网站可以抓取多个列表 如 新闻/财经/社会等页面上的分类  -->
+        <web_li name="列表1">
+            <!--    自己构造下一页链接   -->
+            <attr  name="start_pattrern">网址前缀</attr>
+            <attr  name="end_pattrern">网址后缀</attr>
+             <!--    需要抓取页面的页数   -->
+            <attr  name="page_num">需要抓取的页数</attr>
+            <!--    需要特殊处理的时候，  例如：有点页面在第一个是  index.html 到了第二页就是index_2.html    0代表不需要特殊处理，非0代表需要特殊处理特殊处理的符号为属性值-->
+            <attr name="special" id="0">特殊符号的属性值</attr>
+            <attr name="li_attr">
+                <!--  可能需要抓取的链接形式不止一种-->
+                <attr name="需要抓取的tag的标记id/class/***">属性值1</attr>
+                <attr name="需要抓取的tag的标记id/class/***">属性值2</attr>
+                <!-- 抓取的链接是否需要补全    1 代表需要补全  0 代表不需要补全 -->
+                <attr name="completion">1/0</attr>
+            </attr>
+            <attr name="filename" save="需要保存的文件名">
+                <attr name="art_title">
+                    <attr name="需要抓取文章标题的属性标记">属性值</attr>
+                </attr>
+               <attr name="art_time">
+                    <attr name="需要抓取文章发布时间的属性标记">属性值</attr>
+                </attr>
+                <attr name="art_context">
+                     <attr name="需要抓取文章内容的属性标记">属性值</attr>
+                </attr>
+            </attr>
+        </web_li>
+    </web_name>
+</website>
+

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<website>
+     <!--  需要抓取的网站名称  可以配置多个  -->
+    <web_name name="光明网">
+        <!--  一个网站可以抓取多个列表 如 新闻/财经/社会等页面上的分类  -->
+        <web_li name="国际要闻">
+            <!--    自己构造下一页链接   -->
+            <attr  name="start_pattrern">http://world.gmw.cn/node_4661</attr>
+            <attr  name="end_pattrern">htm</attr>
+             <!--    需要抓取页面的页数   -->
+            <attr  name="page_num">10</attr>
+            <!--    需要特殊处理的时候，  例如：有点页面在第一个是  index.html 到了第二页就是index_2.html    0代表不需要特殊处理，非0代表需要特殊处理特殊处理的符号为属性值     并判断是否需要补全 0代表不需要补全-->
+            <attr name="special" id="1">_</attr>
+            <attr name="li_attr">
+                <!--  可能需要抓取的链接形式不止一种-->
+                <attr name="class">channel-newsGroup</attr>
+                <attr name="class">channel-newsTime</attr>
+            </attr>
+            <attr name="filename" save="光明网.txt">
+                <attr name="art_title">
+                    <attr name="id">articleTitle</attr>
+                </attr>
+               <attr name="art_time">
+                    <attr name="id">pubTime</attr>
+                </attr>
+                <attr name="art_context">
+                     <attr name="id">contentMain</attr>
+                </attr>
+            </attr>
+        </web_li>
+    </web_name>
+</website>
+
